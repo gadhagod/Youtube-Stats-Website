@@ -1,0 +1,21 @@
+<!doctype html>
+<link rel="stylesheet" href="styles.css">
+<head>
+    <title>Youtube Channel Stats</title>
+    <link rel= "stylesheet" type= "text/css" href="{{ url_for('static',filename='style.css') }}">
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    <center><img src="{{ image }}" ></center>
+    <p>{{ description }}</p>
+    <br>
+    <p><b>Subscriber Count: </b>{{ subs }}</p>
+    <p><b>View Count: </b>{{ views }}</b></p>
+    <p><b>Video Count: </b> {{ videos }} </p>
+    <center>
+        <script src="https://apis.google.com/js/platform.js"></script>
+        <div class="g-ytsubscribe" data-{{ button_type }}="{{ channel }}" data-layout="default" data-count="default"></div>
+    </center>
+    <br><br>
+    <a href="http://yt-stats.herokuapp.com/"><p>Back to Search</p></a>
+</body>

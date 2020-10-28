@@ -1,0 +1,43 @@
+<!doctype html>
+<link rel="stylesheet" href="styles.css">
+<head>
+    <title>Youtube Channel Stats</title>
+    <link rel= "stylesheet" type= "text/css" href='{{ url_for("static",filename="style.css") }}''>
+</head>
+<body>
+<h1>Youtube Stats</h1>
+<p><b><center>Get Youtube stats in seconds</center></b></p>
+<script src='{{ url_for("static", filename="search.js") }}'></script>
+
+<center>
+<form>
+    <select name = "method">
+      <option value = "id">Channel ID</option>
+      <option value = "name">Channel Name</option>
+    </select><br><br>
+
+    <input type="text" id="channel" value="Youtube channel here">
+
+    <button onclick="search()">Get stats</button>
+</form>
+</center>
+
+<hr>
+<h2>Instructions</h2>
+<p><b><u>Get Youtube channel stats by ID</u></b><br>
+Using ID to get stats is recommended over name, beacuse of duplicate account usernames. 
+To a channel's ID, go to thir channel. 
+The link to the channel will have it's ID. 
+If your are getting stats to a bigger channel, the link may have <code>/user/{name of channel}</code>.
+If this is the case, you have to look them up in the search bar and <i>then</i> click on the channel. 
+You can also use <a href="https://socialnewsify.com/get-channel-id-by-username-youtube/">this website</a>
+to get channel IDs.</i></p>
+<p><b><u>Get Youtube channel stats by Name</u></b><br>
+Using ID to get your stats is recommended over name, beacuse of duplicate account usernames. It should
+work for big channels. All you need is the youtube channel's name (case sensitive).
+<center>
+    <a href="https://github.com/gadhagod/Youtube-Stats-Website">
+        <img src="https://github.githubassets.com/images/modules/open_graph/github-mark.png" legnth=7% width=7%>
+    </a>
+    </center>
+</body>
